@@ -118,7 +118,7 @@
 
     <script>
       myDownloadFunction = (id) => {
-        fetch(`http://localhost:3000/api/s3/file/${id}/download`, {
+        fetch(`https://s3-backend-production.up.railway.app/api/s3/file/${id}/download`, {
           headers: {
             mode: "cors",
           },
@@ -130,7 +130,7 @@
       };
 
       myEncryptFunction = (id) => {
-        fetch(`http://localhost:3000/api/s3/file/${id}/encrypt`, {
+        fetch(`https://s3-backend-production.up.railway.app/api/s3/file/${id}/encrypt`, {
           headers: {
             mode: "cors",
           },
@@ -142,7 +142,7 @@
       };
 
       myUploadFunction = (id) => {
-        fetch(`http://localhost:3000/api/s3/file/${id}/upload`, {
+        fetch(`https://s3-backend-production.up.railway.app/api/s3/file/${id}/upload`, {
           headers: {
             mode: "cors",
           },
